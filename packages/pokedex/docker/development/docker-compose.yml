@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  pokedex-development:
+    build:
+      context: ../../
+      dockerfile: docker/development/Dockerfile
+    image: pokedex-development
+    ports:
+      - "3001:3000"
