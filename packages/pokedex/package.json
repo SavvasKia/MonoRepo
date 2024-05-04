@@ -1,7 +1,6 @@
 {
   "name": "pokedex",
   "version": "0.1.0",
-  "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,6 +8,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "MonoRepo/components": "0.1.0",
     "react": "^18",
     "react-dom": "^18",
     "next": "14.2.3"
