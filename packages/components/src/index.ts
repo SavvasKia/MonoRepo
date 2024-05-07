@@ -1,4 +1,1 @@
-import { DataGrid } from "./DataGrid";
-
-export { DataGrid };
-
+export * from './components';
