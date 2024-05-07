@@ -1,6 +1,8 @@
+"use client";
 import styles from "./page.module.css";
-import { DataGrid } from "components";
-
+// import { Button } from "components";
+import { store } from "./lib/store";
+import { Provider } from "react-redux";
 
 const rows = [
   {
@@ -111,7 +113,10 @@ const columns = [
 ];
 
 export default function Home() {
-  return <main className={styles.main}>
-    <DataGrid columns={columns} rows={rows} />
-  </main>;
+  return (
+    <main className={styles.main}>
+      {/* <DataGrid columns={columns} rows={rows} /> */}
+      {/* <Button label="test" /> */}
+    </main>
+  );
 }
