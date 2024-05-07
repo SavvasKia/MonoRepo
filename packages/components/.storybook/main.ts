@@ -1,4 +1,4 @@
-import type { StorybookConfig } from "@storybook/react-webpack5";
+import type { StorybookConfig } from "@storybook/nextjs";
 const config: StorybookConfig = {
   stories: [
     "../src/**/*.mdx",
@@ -11,12 +11,11 @@ const config: StorybookConfig = {
     "@storybook/addon-essentials",
     "@storybook/addon-interactions",
     "@storybook/preset-scss",
-    "@storybook/addon-mdx-gfm",
-    "@storybook/addon-webpack5-compiler-babel",
     "@chromatic-com/storybook",
+    "@storybook/addon-mdx-gfm"
   ],
   framework: {
-    name: "@storybook/react-webpack5",
+    name: "@storybook/nextjs",
     options: {},
   },
   docs: {
